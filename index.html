@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/fb-share.png">
+  <meta name="author" content="Univesp">
+
+  <meta name="description" property="og:description" content="">
+
+  <title>Univesp | Média, Mediana e Moda</title>
+
+  <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon" />
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+  <!-- Animate CSS. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <link rel="stylesheet" href="https://apps.univesp.br/common/animate.css"> -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.1.css">
+  <!-- <link rel="stylesheet" href="../common/rea-geral-2.1.css">   -->
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
+  <!-- <div class="esconder-tela-pequena"> -->
+
+  <!-- Menu -->
+  <!--///////////////////////////////////////////////////////////////
+  Classe para nav
+  - padrão => header estático
+  - class="header-dinamico" => header possui posição fixa e é mostrado apenas quando a página está no topo (necessário ajustar padding ou margin superior e inferior do main).
+  //////////////////////////////////////////////////////////////////-->
+  <!-- <nav class="header-dinamico"> -->
+  <nav>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/colorida-positiva.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+      </div>
+      <!-- Compartilhamento -->
+      <ul class="nav justify-content-end">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="menuLateral">
+    <div class = 'atual' data-scroll='secao3'>1</div>
+    <div data-scroll='secao4'>2</div>
+    <div data-scroll='secao5'>3</div>
+    <div data-scroll='secao8'>4</div>
+    <div data-scroll='secao9'>5</div>
+  </div>
+
+  <!-- Conteúdo -->
+  <main id="conteudoPrincipal">
+
+    <div class="container" id='secao1'>
+      <h4 class='roboto'>MÉDIA ,&nbsp; MEDIANA &nbsp; E &nbsp; MODA</h4>
+      <div>
+        <img src="assets/ilustra01.svg" alt="">
+      </div>
+    </div>
+
+    <div class="container" id='secao2'>
+      <div class='selecionado' data-scroll = 'secao3'>
+        <span>O que são medidas de tendência central?</span>
+      </div>
+      <div data-scroll = 'secao4'>
+        <span>Quais são as principais medidas de tendência central?</span>
+      </div>
+      <div data-scroll = 'secao5'>
+        <span>Vamos calcular?</span>
+      </div>
+      <div data-scroll = 'secao8'>
+        <span>Saiba mais</span>
+      </div>
+      <div data-scroll = 'secao9'>
+        <span>Me vê uma média?</span>
+      </div>
+    </div>
+
+    <div class="container" id='secao3'>
+      <h4 class='titulo'>Seção 1 - O que são medidas de tendência central?</h4>
+      <p>Em Estatística, tabelas, gráficos e medidas são elementos essenciais, uma vez que eles nos ajudam a obter informações sobre um conjunto de dados e permitem fazer inferências por meio de análises. Suponha que temos um conjunto de dados e
+        queremos valores que representem, de alguma forma, o todo do conjunto caracterizando-o. Esses valores são chamados de medidas de tendência central, as quais você conhecerá a seguir.</p>
+    </div>
+
+    <div class="container" id='secao4'>
+      <h4 class='titulo'>Seção 2 - Quais são as principais medidas de tendência central?</h4>
+
+      <div data-toggle="collapse" class='botao collapsed' href="#collapse1">
+        <span>Média</span>
+      </div>
+      <div class="collapse" id="collapse1">
+        <p>É uma das medidas mais utilizadas no dia a dia. Na média aritmética, calcula-se fazendo a soma dos valores de \(x_i\), onde \(i=1, ..., n\), e dividindo pelo número total de valores \(n\).</p>
+        <p class='frmGrnd'>\[\overline{x} = \frac{x_1 + ... + x_n}{n} = \frac{\displaystyle\sum_{i=1}^{n}x_i}{n}\]</p>
+        <p>Por exemplo: vamos determinar a média dos números \(7, 9, 3, 4, 2, 1\).</p>
+        <p class='frmGrnd'>\[n=6 \text{ e } \frac{7+9+3+4+2+1}{6} = 4.3\]</p>
+      </div>
+
+      <div data-toggle="collapse" class='botao collapsed' href="#collapse2">
+        <span>Mediana</span>
+      </div>
+      <div class="collapse" id="collapse2">
+        <p>A mediana de um conjunto finito de dados indica exatamente o valor central desse conjunto e pode ser encontrada através da organização dos números em ordem crescente ou decrescente.</p>
+        <p><b>Conjunto com número ímpar de elementos:</b></p>
+        <p>Se houver um número <b>ímpar de elementos</b>, o número que ocupa a posição \(\frac{n+1}{2}\)será a mediana do conjunto, por exemplo:</p>
+        <p>Para encontrarmos a mediana do seguinte conjunto de dados com 5 (ímpar) elementos:</p>
+        <p>\[5, 7, 2, 1, 9\]</p>
+        <p>1º Ordenamos: \(1, 2, 5, 7, 9\).</p>
+        <p>A mediana é o número que ocupa a posição \(\frac{5+1}{2}=3\), que é o \(5\). Portanto, a <b>mediana</b> desse conjunto de números é igual a 5.</p>
+        <p>Mas, e se tivermos um conjunto de dados com um número par de elementos? Como calculamos a mediana?</p>
+        <p><b>Conjunto com número par de elementos:</b></p>
+        <p>Neste caso, a mediana é calculada pela média dos valores que ocupam as posições centrais \(\frac{n}{2}\) e \(\frac{n}{2}+1\). Por exemplo, no conjunto com 6 (par) elementos a seguir: \(3, 1, 5, 2, 8, 7\).</p>
+        <p>1º Ordenamos: \(1, 2, 3, 5, 7 \text{ e } 8\).</p>
+        <p>Encontramos os valores que ocupam as posições \(\frac{6}{2}=3\) e \(\frac{6}{2}+1=4\), que são 3 e 5, respectivamente. Calculando a média desses números, obtemos: \(\frac{3+5}{2}=4\) e, portanto, a mediana é igual a 4. Note que nem sempre
+          a mediana faz parte do conjunto inicial de dados.</p>
+        <p>Em síntese, para calcular a mediana de um conjunto de dados:</p>
+        <ul>
+          <li>Organize os valores do conjunto de dados em ordem crescente ou decrescente;</li>
+          <li>Se a quantidade de valores do conjunto for ímpar, a mediana é o valor central;</li>
+          <li>Se a quantidade de valores do conjunto for par, é preciso tirar a média aritmética dos valores centrais.</li>
+        </ul>
+      </div>
+
+      <div data-toggle="collapse" class='botao collapsed' href="#collapse3">
+        <span>Moda</span>
+      </div>
+      <div class="collapse" id="collapse3">
+        <p>A Moda, como o próprio nome pode sugerir, é o valor que ocorre com mais frequência num conjunto de dados. Veja os seguintes exemplos:</p>
+        <p>\(1, 6, 10, 20, 20, 4, 7\) o valor que aparece mais vezes é o 20, sendo ele então a moda do conjunto.</p>
+        <p>\(1, 4, 4, 3, 2, 2, 5\) aqui há dois valores que aparecem duas vezes, o 4 e o 2. Nesse caso, ambos são moda e, portanto, o conjunto é chamado de bimodal. Há conjuntos que podem possuir mais do que duas modas, sendo então chamados de
+          multimodais.</p>
+        <p>Mas, e no caso do seguinte conjunto de números: \(1, 3, 5, 7, 9\)? Nesse caso, não há moda e ele é chamado de amodal.</p>
+        <p><b>Atenção:</b> A moda pode não existir, por exemplo, em casos em que todos os elementos de um conjunto de dados <b>ocorrem com a mesma frequência</b>. Veja o caso do conjunto 2, 2, 5, 5, 9, 9, o qual não possui moda, sendo então amodal.</p>
+      </div>
+    </div>
+
+    <div class="container-fluid faixaVerde" id='secao5'>
+      <div class="container">
+        <h4 class='titulo'>Seção 3 - Vamos calcular?</h4>
+        <p>Insira aqui um conjunto de dados (não precisa estar ordenado) para o cálculo de Média, Mediana e Moda.</p>
+        <div class="caixaInput">
+          <input class = 'inputNum' type="text" name="" value="" min=1 max=99 >
+          <button type="button" name="button" class='btnOK' data-caixa='1'>OK</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id='secao6'>
+      <div class="caixaElementos" data-caixa='1'>
+        <!-- <div>
+          <i class="fas fa-times"></i>
+          <span>10</span>
+        </div>
+        <div>
+          <i class="fas fa-times"></i>
+          <span>20</span>
+        </div> -->
+      </div>
+
+    </div>
+
+    <div class="container" id='secao7'>
+      <div id='caixaReta'>
+        <div id='reta'>
+          <div class="retinhas"><div></div><span></span></div>
+          <div class="retinhas"><div></div><span></span></div>
+          <div class="retinhas"><div></div><span></span></div>
+          <div class="retinhas"><div></div><span></span></div>
+          <div class="retinhas"><div></div><span></span></div>
+          <div class="retinhas"><div></div><span></span></div>
+          <div class="retinhas"><div></div><span></span></div>
+          <div class="retinhas"><div></div><span></span></div>
+          <div class="retinhas"><div></div><span></span></div>
+          <div id='mediana'>
+            <div>
+              <span>Mediana</span>
+              <span></span>
+            </div>
+            <div>
+              <i class="fas fa-long-arrow-alt-down"></i>
+            </div>
+            <div></div>
+          </div>
+          <div id='media'>
+            <div></div>
+            <div>
+              <i class="fas fa-long-arrow-alt-down"></i>
+            </div>
+            <div>
+              <span>Média</span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="caixaMedias">
+        <div>
+          <div>MÉDIA</div>
+          <div id='tituloModa'>MODA</div>
+          <div>MEDIANA</div>
+        </div>
+        <div>
+          <div id="mediaTab"></div>
+          <div id="modaTab"></div>
+          <div id="medianaTab"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id='secao8'>
+      <h4 class="titulo">Seção 4 - Saiba mais</h4>
+      <p>Você sabia que nas competições de nado sincronizado os jurados atribuem notas de 0 a 10 para as equipes, mas, para o cálculo da nota final, que é dado pela soma de todas as notas, descartam a pior e a melhor nota? Pois é, esses valores são
+        chamados “discrepantes” e, quando precisamos de uma medida que melhor represente o conjunto de dados, podem tornar a média não adequada para representá-lo. Observe o exemplo:</p>
+      <p>\[9, 5.6, 5.7, 5.9, 10, 5\]</p>
+      <p>Para esse conjunto de dados, a média é 6,9, que é maior do que a maior parte dos números que temos no conjunto. Ou seja, nesse caso, a média não é a medida de tendência central mais adequada para representá-lo. Isso ocorreu justamente pelos
+        valores discrepantes, como 9 e 10.</p>
+      <p>Entender qual das medidas de tendência central é mais adequada é crucial para a <b style='color:#de3a27'>tomada de decisões</b>. Imagine que o dono de uma loja de sapatos masculinos precise escolher as numerações de sapatos para adicionar a seu estoque,
+        considerando que seus clientes costumam comprar com mais frequência a numeração 40. Nesse caso, ele escolheria mais sapatos com essa numeração, que é a moda do conjunto de dados “números que os clientes calçam”. Pense no quanto poderia ser um
+        prejuízo para ele estocar sapatos que não seriam comprados por conta da numeração.</p>
+      <div>
+        <img src="assets/Ilustra02.png" alt="">
+      </div>
+    </div>
+
+    <div class="container-fluid faixaVerde" id='secao9'>
+      <div class="container">
+        <h4 class = 'titulo'>Seção 5 - Me vê uma média?</h4>
+        <p>Já mostramos como se calcula uma média aritmética, mas você sabia que existem diferentes tipos de média? Temos também a média geométrica, a harmônica e a ponderada.</p>
+      </div>
+    </div>
+
+    <div class="container" id='secao10'>
+      <p>Vamos ver um exemplo? Suponha que sua nota final é calculada com base nas notas de quatro provas, com valor de 0 a 10. Digamos que suas notas sejam:</p>
+      <p class = 'espMen'>\(N1=9,0\)</p>
+      <p class = 'espMen'>\(N2=6,0\)</p>
+      <p class = 'espMen'>\(N3=8,0\)</p>
+      <p>\(N4=5,0\)</p>
+      <p>E que, para passar para o próximo nível, você deve ter média superior ou igual a 7,0.</p>
+      <p>Pela <b style='color:#de3a27'>média aritmética</b>, sua nota final será:</p>
+      <p class='frmGrnd'>\[NF=\frac{N1+N2+N3+N4}{4}=9+6+8+5=284=7\]</p>
+      <p>Ou seja, você foi aprovado! :)</p>
+      <p>Pela <b style='color:#de3a27'>média geométrica</b>, sua nota será dada por:</p>
+      <p class='frmGrnd'>\[NF=\sqrt[4]{9.6.8.5}=6,82\]</p>
+      <p>Na <b style='color:#de3a27'>média harmônica</b>, sua nota final será:</p>
+      <p class='frmGrnd'>\[NF = \frac{4}{\displaystyle\frac{1}{9} + \frac{1}{6} + \frac{1}{8} + \frac{1}{5}} = 6,63\]</p>
+      <p>Finalmente, suponha que as provas tenham peso progressivo, ou seja, peso 1 para a prova 1, 2 para a 2, 3 para a 3 e 4 para a 4. <b style='color:#e13a27'>Pela média ponderada</b>, sua nota final seria:</p>
+      <p class='frmGrnd'>\[NF = \frac{1.9 + 2.6 + 3.8 + 4.5}{10} = 6,5\]</p>
+      <p>Agora, que tal encontrar a nota mínima que você teria que tirar na última prova para ser aprovado pelas médias geométrica, harmônica e ponderada?</p>
+    </div>
+
+    <div class="container" id='secao11'>
+      <div class="caixaDoInput">
+        <span>NOTA DA ÚLTIMA PROVA:</span>
+        <input class = 'inputNum' type="text" name="" value="" id='P4' min=1 max=99 >
+      </div>
+      <div class="caixaMedias">
+        <div>
+          <div>MÉDIA GEOMÉTRICA</div>
+          <div>MÉDIA HARMÔNICA</div>
+          <div>MÉDIA PONDERADA</div>
+        </div>
+        <div>
+          <div id = 'medGeo'></div>
+          <div id = 'medHar'></div>
+          <div id = 'medPon'></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id='secao12'>
+      <p>Que tal você inserir um conjunto de dados e verificar a diferença entre as médias?</p>
+      <p>Insira aqui um conjunto de dados (não precisa estar ordenado) para o cálculo das médias aritmética, geométrica e harmônica:</p>
+      <div class="caixaInput">
+        <input class = 'inputNum' type="text" name="" value="" min=1 max=99 >
+        <button type="button" name="button" class='btnOK' data-caixa='2'>OK</button>
+      </div>
+      <div class="caixaElementos" data-caixa='2'>
+      </div>
+      <p>Caso queira calcular a média ponderada, indique abaixo os valores e seus respectivos pesos (inclusive se for peso 1 para algum deles):</p>
+      <div class="caixaDePesos">
+        <div>
+          <div>Valores</div>
+        </div>
+        <div>
+          <div>Pesos</div>
+        </div>
+      </div>
+      <div class="caixaResultados2">
+        <div class="caixaMedias">
+          <div>
+            <div>MÉDIA GEOMÉTRICA</div>
+            <div>MÉDIA HARMÔNICA</div>
+            <div>MÉDIA PONDERADA</div>
+          </div>
+          <div>
+            <div class='mediaGeometricaRes'></div>
+            <div class='mediaHarmonicaRes'></div>
+            <div class='mediaPonderadaRes'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id='secao13'>
+      <h4>Fórmulas para o cálculo das médias aritmética, harmônica, geométrica e ponderada</h4>
+      <div class="conteudoBotoes">
+        <div>
+          <div data-tela = '0' class = 'atual'>Média Aritmética</div>
+          <div data-tela = '1'>Média Harmônica</div>
+          <div data-tela = '2'>Média Geométrica</div>
+        </div>
+        <div>
+          <div class = 'atual'>
+            <p>Na média aritmética, calcula-se fazendo a soma dos valores de \(x_i\), onde \(i=1,\dots, n\), e dividindo pelo número total de valores \(n\).</p>
+            <p>\[\overline{x} = \frac{x_1+\dots+x_n}{n}=\frac{\displaystyle\sum_{i=1}^{n}x_i}{n}\]</p>
+          </div>
+          <div>
+            <p>É calculada fazendo a razão entre o número de elementos e a soma dos inversos desses elementos. Sejam \(x_1, x_2, \dots x_n\) <b style="color:#de3a27">números reais positivos</b>. A média harmônica é dada por:</p>
+            <p>\[\overline{h} = \frac{n}{\displaystyle\frac{1}{x_1}+\frac{1}{x_2}+\dots+\frac{1}{x_n}}\]</p>
+          </div>
+          <div>
+            <p>A média geométrica de um conjunto de números positivos é definida como o produto de todos os membros do conjunto elevado ao inverso do número de membros. Sejam \(x_1, x_2, \dots x_n\) números reais positivos pertencentes ao conjunto. A média geométrica é dada por:</p>
+            <p>\[\overline{g} = \sqrt[n]{x_1.x_2\dots x_n}\]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- RODAPÉ -->
+  <!--//////////////////////////////////////////////////////
+  Classes prontas p/ footer (podem ser combinadas):
+  padrão => texto e contornos em cinza
+  class = "black" => texto e contornos em preto
+  class = "negativo" => texto e contornos em branco, sobre fundo escuro
+  class = "transparente" => fundo transparente (necessário ajustar cor dos ícones de compartilhamento nos círculos, para bater com a cor de fundo)
+  /////////////////////////////////////////////////////////-->
+  <!-- <footer class="black"> -->
+  <!-- <footer class="negativo"> -->
+  <!-- <footer class="transparente"> -->
+  <!-- <footer class="transparente black"> -->
+  <!-- <footer class="transparente negativo"> -->
+  <footer>
+    <div class="container d-flex justify-content-between">
+
+      <div class="cred-rea">
+        <!-- Comente em caso de adaptação do REA -->
+        <div>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2020.txt" target="_blank">MIT</a>.
+          Você pode utilizá-lo, compartilhá-lo e modificá-lo.</div>
+        <div><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></div>
+        <!-- <div><a href="#" target="_blank" aria-label="GitHub" style="white-space:nowrap;">GitHub <i class="fab fa-github"></i></a></div> -->
+        <div>Compartilhe: <div class="sharing"></div>
+        </div>
+
+        <!-- Descomente em caso de adaptação do REA -->
+        <!-- <p>
+          <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+          <span><a href="#">Versão original da Univesp</a></span>
+        </p> -->
+      </div>
+
+      <!-- FORMULÁRIOS DE AVALIAÇÃO -->
+      <div class="aval-rea d-flex">
+        <!-- AVALIAR RECURSO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSdzNOtfkB_2C6RK_Mdk8C84mFotD9Ug0nE0TxPztfPrUshSmA/viewform?usp=pp_url&entry.542052009=Media+Mediana+Moda" target="_blank">Avaliar este recurso</a>
+        <!-- REPORTAR ERRO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSdwGrx-Z44kZ4Nfnt320DOvJT8KkbMzQIt5C9kbH-rGtC8U4w/viewform?usp=pp_url&entry.1523910789=Media+Mediana+Moda" target="_blank">Reportar erro</a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+
+  <!-- Fim da div .esconder-tela-pequena
+  Utilizar essa div caso o REA não se adapte a todos os formatos de tela -->
+  <!-- </div> -->
+
+  <!-- //////////////////////////////////////////////////////////
+  AVISO =+960px
+  Utilizar caso o REA possua limitações quanto aos tamanhos de tela
+  Caso contrário, deletar
+  ///////////////////////////////////////////////////////////////-->
+  <!-- <div class= "container d-lg-none text-center">
+    <div class="container">
+      <a href="https://univesp.br/" target="_blank">
+        <img src="https://apps.univesp.br/common/logo-univesp-positivo.svg" alt="Logo da Univesp" height="47px" width="135px" class='img-responsive center-block' style="margin-top:4rem">
+      </a>
+    </div>
+    <img src='https://apps.univesp.br/common/aviso-tela.gif' alt="Computador Animado" height="117px" width="160px" class='img-responsive center-block' style="margin-top:3rem">
+    <div style="margin-top:.5rem">
+      <p>
+        <font style=font-family:"Barlow" color="#3b78d1" 'text-center' size="10rem"><b>OPS!</b></font>
+      </p>
+      <p>
+        <font style=font-family:"Verdana" "text-center" size="3rem">Visualize este recurso em um computador, em janela com largura mínima de 992px.</font>
+      </p>
+    </div>
+  </div> -->
+
+  <!-- CRÉDITOS -->
+  <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Desenvolvimento Econômico</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
+
+          <h6>Equipe</h6>
+          <!-- <p><span class="funcao">Docente responsável</span>Fulano de Tal</p> -->
+          <p><span class="funcao">Coordenação</span>Cristian Degasperini Guilhen</p>
+          <p><span class="funcao">Roteirização e Design Instrucional</span>Andressa Rubim e Thiago Nagafuchi</p>
+          <p><span class="funcao">Ilustração</span>Celso Lourenço</p>
+          <p><span class="funcao">Layout</span>Natasha Higa</p>
+          <p><span class="funcao">Programação</span>Alberto Ortiz</p>
+          <p><span class="funcao">Revisão</span>July dos Santos Silva</p>
+
+        </div>
+        <div class="modal-footer">
+          <p>Novembro/2020</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquivos Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+    var share = $(".sharing");
+    var page_title = $(document).attr('title');
+    var page_url = window.location.href;
+    share.jsSocials({
+      shares: [{
+          share: "facebook",
+          logo: "fab fa-facebook-f",
+        },
+        {
+          share: "twitter",
+          logo: "fab fa-twitter",
+        },
+        {
+          share: "whatsapp",
+          logo: "fab fa-whatsapp",
+        },
+      ],
+      url: page_url,
+      text: 'Confira o REA ' + page_title + '.',
+      showLabel: false,
+      showCount: false,
+      shareIn: "popup",
+    });
+  </script>
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="javascripts/events.js"></script>
+
+  <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+  <!-- Analytics. Remova em caso de reutilização do REA -->
+  <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>
